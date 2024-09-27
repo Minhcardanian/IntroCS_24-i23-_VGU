@@ -1,0 +1,12 @@
+Procedure FindGCD(a, b)
+    Input: Two positive integers a and b
+    Output: The greatest common divisor (GCD) of a and b
+
+    While b ≠ 0 do
+        temp ← b
+        b ← a mod b
+        a ← temp
+    End While
+
+    Return a
+End Procedure
