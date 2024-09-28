@@ -27,3 +27,4 @@ This directory houses all the course materials, including lecture slides, readin
 ├── MATERIAL
 │   └── Detail.md
 └── README.md
+```
