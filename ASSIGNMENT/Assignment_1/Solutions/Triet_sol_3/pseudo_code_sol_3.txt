@@ -1,0 +1,8 @@
+Procedure GCD(a, b)
+    While b ≠ 0 Do
+        temp ← b
+        b ← a mod b
+        a ← temp
+    End While
+    Return a
+End Procedure
