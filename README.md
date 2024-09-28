@@ -11,3 +11,18 @@ This directory contains all the assignments for the course. Each assignment will
 ### 2. `Material/`
 This directory houses all the course materials, including lecture slides, reading lists, and other learning resources provided throughout the course.
 
+### Tree Structure
+
+```bash
+├── ASSIGNMENT
+│   └── Assignment_1
+│       ├── AS1_pseudo.txt
+│       ├── Flowchart_GCD.md
+│       └── Solutions
+│           └── <name>
+│               ├── Flowchart_Recursive.md
+│               ├── MinhBui_Recursive.c
+│               └── recursive_GCD.md
+├── MATERIAL
+│   └── Detail.md
+└── README.md
