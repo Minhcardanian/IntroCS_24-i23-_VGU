@@ -1,12 +1,14 @@
 ```mermaid
-flowchart TD
-A[Start] --> B[Input a, b]
-B --> C{Is a != 0 or b != 0?}
-C --> Yes --> D[Return a + b] --> E[End]
-C --> No --> F{a != b?}
-F --> Yes --> G{a > b?}
-G --> Yes --> H[a = a - b]
-G --> C
-G --> No --> I[b = b - a]
-I --> C
-F --> No --> J[Return a] --> K[End]
+graph TD;
+    Start((Start)) --> Input[/"Enter two positive integers: a, b"/]
+    Input --> CheckZero{Is a == 0 or b == 0?}
+    CheckZero -->|Yes| ReturnAorB[Return a + b]
+    CheckZero -->|No| WhileLoop{"a != b"}
+    WhileLoop -->|True| Compare{Is a > b?}
+    Compare -->|Yes| SubtractB[Subtract b from a]
+    Compare -->|No| SubtractA[Subtract a from b]
+    SubtractB --> WhileLoop
+    SubtractA --> WhileLoop
+    WhileLoop -->|False| ReturnA[Return a]
+    ReturnA --> OutputResult[/"Print GCD of a and b: gcd"/]
+    OutputResult --> End((End))
