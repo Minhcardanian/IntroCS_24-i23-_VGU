@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[Start] --> B[Input a, b]
     B --> C{Is b != 0?}
