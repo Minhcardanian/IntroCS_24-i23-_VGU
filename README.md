@@ -15,14 +15,15 @@ This directory houses all the course materials, including lecture slides, readin
 
 ```bash
 ├── ASSIGNMENT
-│   └── Assignment_1
-│       ├── AS1_pseudo.txt
-│       ├── Flowchart_GCD.md
-│       └── Solutions
-│           └── <name>
-│               ├── Flowchart_Recursive.md
-│               ├── MinhBui_Recursive.c
-│               └── recursive_GCD.md
+│   └── <assignment_name>
+│       ├── <assignment_name>_pseudo.txt
+│       ├── <assignment_name>_flowchart.md
+│       ├── Solutions
+│       │   └── <name>
+│       │       ├── <file_type><assignment_name>.md
+│       │       ├── <file_type><assignment_name>.c
+│       │       └── <file_type><assignment_name>.md
+│       └── Todo.md
 ├── MATERIAL
 │   └── Detail.md
 └── README.md
