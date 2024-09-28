@@ -1,10 +1,11 @@
 ```mermaid
-flowchart TD
-    A[Start] --> B[Input a, b]
-    B --> C{Is b != 0?}
-    C -- Yes --> D[temp = b]
-    D --> E[b = a mod b]
-    E --> F[a = temp]
-    F --> C
-    C -- No --> G[Return a]
-    G --> H[End]
+graph TD;
+    Start[Start] --> |Enter two integers| InputAandB[Input a, b]
+    InputAandB --> CallGCD[Call GCD(a, b)]
+    CallGCD --> CheckB{Is b = 0?}
+    CheckB -->|Yes| ReturnA[Return a]
+    CheckB -->|No| ModAB[Calculate a % b]
+    ModAB --> RecurseGCD[Call GCD(b, a % b)]
+    RecurseGCD --> CheckB
+    ReturnA --> PrintResult[Print result]
+    PrintResult --> End[End]
