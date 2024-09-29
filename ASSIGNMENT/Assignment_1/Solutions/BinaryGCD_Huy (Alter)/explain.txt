@@ -1,0 +1,20 @@
+Thuật toán GCD nhị phân (thuật toán của Stein) sử dụng các phép toán bit để tính Ước chung lớn nhất (GCD) của hai số nguyên dương. Thay vì sử dụng phép chia, thuật toán này chỉ sử dụng phép dịch bit, so sánh và trừ, do đó hiệu quả hơn trên máy tính nhị phân.
+
+Các bước chính của thuật toán:
+
+Trường hợp cơ bản:
+
+Nếu a bằng b, GCD là a.
+Nếu a hoặc b bằng 0, GCD là số còn lại.
+Cả hai số đều chẵn:
+
+GCD(a, b) = 2 * GCD(a/2, b/2)
+Sử dụng phép dịch phải (>> 1) để chia cho 2 và phép dịch trái (<< 1) để nhân với 2.
+Một số chẵn, một số lẻ:
+
+Nếu a chẵn và b lẻ, GCD(a, b) = GCD(a/2, b)
+Nếu a lẻ và b chẵn, GCD(a, b) = GCD(a, b/2)
+Cả hai số đều lẻ:
+
+Nếu a >= b, GCD(a, b) = GCD((a - b)/2, b)
+Nếu a < b, GCD(a, b) = GCD((b - a)/2, a)
