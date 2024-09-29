@@ -1,0 +1,29 @@
+START
+
+FUNCTION lcm_direct(a, b)
+    SET larger = MAX(a, b)
+    SET lcm = larger
+
+    WHILE lcm is NOT divisible by a OR lcm is NOT divisible by b DO
+        lcm = lcm + larger 
+    END WHILE
+
+    RETURN lcm
+END FUNCTION
+
+FUNCTION gcd_from_lcm(a, b)
+    SET lcm = lcm_direct(a, b) 
+    RETURN (a * b) / lcm       
+END FUNCTION
+
+FUNCTION main
+    DECLARE a, b 
+
+    PRINT "Enter two numbers: "
+    READ a, b     
+
+    SET gcd = gcd_from_lcm(a, b)  
+    PRINT "GCD of a and b (using LCM) is: ", gcd  
+END FUNCTION
+
+END
