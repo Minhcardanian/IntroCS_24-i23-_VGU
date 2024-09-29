@@ -11,6 +11,27 @@ This directory contains all the assignments for the course. Each assignment will
 ### 2. `Material/`
 This directory houses all the course materials, including lecture slides, reading lists, and other learning resources provided throughout the course.
 
+### Git Commands Reference Table
+
+| Action                                    | Command                                                      | Description                                                                                     |
+|-------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| **Clone the repository**                  | `git clone https://github.com/Minhcardanian/IntroCS_24-i23-_VGU.git` | Creates a local copy of the remote repository on your machine.                                  |
+| **Check the status of the repository**    | `git status`                                                 | Shows the current state of the working directory, including untracked or modified files.         |
+| **Add changes to staging area**           | `git add .`                                                  | Stages all changes for the next commit. You can also add specific files instead of `.`.          |
+| **Commit the changes**                    | `git commit -m "Your commit message"`                        | Commits the staged changes to the repository with a descriptive message.                        |
+| **Fetch updates from remote**             | `git fetch origin`                                           | Fetches the latest changes from the remote repository without merging them.                     |
+| **Merge fetched changes**                 | `git merge origin/main`                                      | Merges the changes from the `main` branch of the remote repository into your local branch.       |
+| **Pull latest changes**                   | `git pull origin main`                                       | Fetches and merges the latest changes from the `main` branch of the remote repository.           |
+| **Pull with no rebase (resolve divergence)** | `git pull --no-rebase origin main`                            | Pulls the latest changes from `origin/main` and merges them without rebasing.                   |
+| **Pull with rebase (resolve divergence)**   | `git pull --rebase origin main`                                | Pulls the latest changes and rebases your local commits on top of them.                         |
+| **Push changes to the remote**            | `git push origin main`                                       | Pushes the local commits to the remote `main` branch.                                            |
+| **Check logs of commits**                 | `git log`                                                    | Displays the commit history.                                                                    |
+
+### Notes on Resolving Divergence
+
+- Use `git pull --no-rebase origin main` to merge remote changes without altering your commit history. This is the default behavior.
+- Use `git pull --rebase origin main` if you want to reapply your local commits on top of the latest remote commits, keeping a linear history. This may require resolving conflicts.
+
 ### Tree Structure
 
 ```bash
