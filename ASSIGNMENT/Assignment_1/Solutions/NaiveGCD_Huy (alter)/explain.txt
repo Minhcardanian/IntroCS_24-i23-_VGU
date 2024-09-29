@@ -1,0 +1,19 @@
+Khởi tạo:
+Đặt biến gcd bằng 1.
+Xác định giá trị nhỏ hơn giữa a và b, gọi là min.
+
+Duyệt từ 1 đến min:
+Sử dụng vòng lặp để duyệt qua tất cả các số nguyên i từ 1 đến min.
+Tại mỗi bước, kiểm tra xem i có phải là ước của cả a và b không bằng cách:
+Kiểm tra a % i == 0 và b % i == 0.
+
+Cập nhật GCD:
+Nếu i chia hết cả a và b, cập nhật gcd = i.
+
+Kết quả:
+Sau khi hoàn thành vòng lặp, gcd sẽ là ước chung lớn nhất của a và b.
+
+Tóm tát lại là:
+Thuật toán này kiểm tra tất cả các ước có thể có của hai số, do đó thời gian thực thi có thể chậm đối với các số lớn.
+Đây là phương pháp đơn giản nhất để hiểu và triển khai, nhưng không hiệu quả cho các ứng dụng yêu cầu hiệu suất cao.
+Thích hợp cho mục đích giáo dục hoặc khi xử lý các số nhỏ.
