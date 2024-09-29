@@ -52,12 +52,13 @@ This directory houses all the course materials, including lecture slides, readin
 
 ### ASSIGMENT 1: GCD Solutions by Members
 
-| Member Name     | Solution File                                             | Language   | Type of Solution      |
-|-----------------|-----------------------------------------------------------|------------|-----------------------|
-| Minh Bui        | [MinhBui_Recursive.c](./Solutions/MinhBui/MinhBui_Recursive.c) | C          | Recursive Euclidean   |
-| Trong Nhan      | [TrongNhan_GCD.c](./Solutions/AS1_TrongNhan/TrongNhan_GCD.c)  | C          | Iterative Subtraction |
-| Huy             | [BinaryGCD_Huy.c](./Solutions/BinaryGCD_Huy/BinaryGCD_Huy.c)   | C          | Binary GCD (Stein’s Algorithm) |
-| Huy (Alternate) | [NaiveGCD_Huy.c](./Solutions/NaiveGCD_Huy/NaiveGCD_Huy.c)     | C          | Naive Iterative       |
-| Triet           | [Triet_sol_3.c](./Solutions/Triet_sol_3/Triet_sol_3.c)        | C          | Euclidean Iterative   |
-| NhatMinh           | [GCD_using_LCM.c](./Solutions/NhatMinh_LCM/GCD_using_LCM.c)        | C          | LCM inversed formula   |
+| Member Name     | Solution File                                             | Language   | Type of Solution               | Complexity         |
+|-----------------|-----------------------------------------------------------|------------|--------------------------------|--------------------|
+| Minh Bui        | [MinhBui_Recursive.c](./Solutions/MinhBui/MinhBui_Recursive.c) | C          | Recursive Euclidean            | O(log(min(A, B)))  |
+| Trong Nhan      | [TrongNhan_GCD.c](./Solutions/AS1_TrongNhan/TrongNhan_GCD.c)  | C          | Iterative Subtraction          | O(min(A, B))       |
+| Huy             | [BinaryGCD_Huy.c](./Solutions/BinaryGCD_Huy/BinaryGCD_Huy.c)   | C          | Binary GCD (Stein’s Algorithm) | O(log(min(A, B)))  |
+| Huy (Alternate) | [NaiveGCD_Huy.c](./Solutions/NaiveGCD_Huy/NaiveGCD_Huy.c)     | C          | Naive Iterative                | O(min(A, B))       |
+| Triet           | [Triet_sol_3.c](./Solutions/Triet_sol_3/Triet_sol_3.c)        | C          | Euclidean Iterative            | O(log(min(A, B)))  |
+| NhatMinh        | [GCD_using_LCM.c](./Solutions/NhatMinh_LCM/GCD_using_LCM.c)    | C          | LCM inversed formula           | O(log(min(A, B)))  |
+
 Slide URL: [GCD](https://www.canva.com/design/DAGR8jy0tUk/l16knP82W1_KS0H2Khpp9g/view?utm_content=DAGR8jy0tUk&utm_campaign=designshare&utm_medium=link&utm_source=editor)
