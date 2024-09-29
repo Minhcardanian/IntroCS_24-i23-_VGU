@@ -28,3 +28,13 @@ This directory houses all the course materials, including lecture slides, readin
 │   └── Detail.md
 └── README.md
 ```
+
+### ASSIGMENT 1: GCD Solutions by Members
+
+| Member Name     | Solution File                                             | Language   | Type of Solution      |
+|-----------------|-----------------------------------------------------------|------------|-----------------------|
+| Minh Bui        | [MinhBui_Recursive.c](./Solutions/MinhBui/MinhBui_Recursive.c) | C          | Recursive Euclidean   |
+| Trong Nhan      | [TrongNhan_GCD.c](./Solutions/AS1_TrongNhan/TrongNhan_GCD.c)  | C          | Iterative Subtraction |
+| Huy             | [BinaryGCD_Huy.c](./Solutions/BinaryGCD_Huy/BinaryGCD_Huy.c)   | C          | Binary GCD (Stein’s Algorithm) |
+| Huy (Alternate) | [NaiveGCD_Huy.c](./Solutions/NaiveGCD_Huy/NaiveGCD_Huy.c)     | C          | Naive Iterative       |
+| Triet           | [Triet_sol_3.c](./Solutions/Triet_sol_3/Triet_sol_3.c)        | C          | Euclidean Iterative   |
