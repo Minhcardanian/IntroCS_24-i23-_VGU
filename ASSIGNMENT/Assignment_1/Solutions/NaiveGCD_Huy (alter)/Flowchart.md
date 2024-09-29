@@ -1,5 +1,5 @@
 ```mermaid
-flowchart TD
+flowchart LR
     Start((Start)) --> Input[/"Input two integers a, b"/]
     Input --> InitializeGCD[Initialize gcd = 1]
     InitializeGCD --> SetI[Set i = 1]

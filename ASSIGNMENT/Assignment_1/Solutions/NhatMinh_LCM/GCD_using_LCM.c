@@ -20,7 +20,7 @@ int main() {
     printf("Enter two positive integers: ");
     scanf("%d %d", &a, &b);
     
-    printf("GCD of %d and %d (using LCM) is: %d\n", a, b, find_gcd(a, b));
+    printf("GCD of %d and %d is: %d\n", a, b, find_gcd(a, b));
     
     return 0;
 }
