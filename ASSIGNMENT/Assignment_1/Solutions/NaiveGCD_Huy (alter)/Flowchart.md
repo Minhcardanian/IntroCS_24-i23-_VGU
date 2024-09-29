@@ -1,6 +1,6 @@
 ```mermaid
 flowchart TD
-    Start((Start)) --> Input[/"Input two positive integers a, b"/]
+    Start((Start)) --> Input[/"Input two integers a, b"/]
     Input --> InitializeGCD[Initialize gcd = 1]
     InitializeGCD --> SetI[Set i = 1]
     SetI --> LoopCheck{"Is i &lt;= min(a, b)?"}
