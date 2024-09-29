@@ -1,6 +1,6 @@
 START
 
-FUNCTION lcm_direct(a, b)
+FUNCTION find_lcm(a, b) // find_lcm find lcm by adding the larger number to itself until it's divisible by both a and b
     SET larger = MAX(a, b)
     SET lcm = larger
 
@@ -11,8 +11,8 @@ FUNCTION lcm_direct(a, b)
     RETURN lcm
 END FUNCTION
 
-FUNCTION gcd_from_lcm(a, b)
-    SET lcm = lcm_direct(a, b) 
+FUNCTION find_gcd(a, b) // find_gcd find gcd based on the formular gcd(a, b) = a * b / lcm(a, b)
+    SET lcm = find_lcm(a, b) 
     RETURN (a * b) / lcm       
 END FUNCTION
 
@@ -22,8 +22,8 @@ FUNCTION main
     PRINT "Enter two numbers: "
     READ a, b     
 
-    SET gcd = gcd_from_lcm(a, b)  
-    PRINT "GCD of a and b (using LCM) is: ", gcd  
+    SET gcd = find_gcd(a, b)  
+    PRINT "GCD of a and b is: ", gcd  
 END FUNCTION
 
 END
