@@ -1,0 +1,18 @@
+Procedure BinaryGCD(a, b)
+    If a = b Then
+        Return a
+    If a = 0 Then
+        Return b
+    If b = 0 Then
+        Return a
+    If a is even And b is even Then
+        Return 2 * BinaryGCD(a / 2, b / 2)
+    If a is even And b is odd Then
+        Return BinaryGCD(a / 2, b)
+    If a is odd And b is even Then
+        Return BinaryGCD(a, b / 2)
+    If a > b Then
+        Return BinaryGCD((a - b) / 2, b)
+    Else
+        Return BinaryGCD((b - a) / 2, a)
+End Procedure
