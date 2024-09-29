@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[Start] --> B[Input two numbers a, b]
     B --> C{Is a > b?}
