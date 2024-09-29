@@ -59,5 +59,5 @@ This directory houses all the course materials, including lecture slides, readin
 | Huy             | [BinaryGCD_Huy.c](./Solutions/BinaryGCD_Huy/BinaryGCD_Huy.c)   | C          | Binary GCD (Stein’s Algorithm) |
 | Huy (Alternate) | [NaiveGCD_Huy.c](./Solutions/NaiveGCD_Huy/NaiveGCD_Huy.c)     | C          | Naive Iterative       |
 | Triet           | [Triet_sol_3.c](./Solutions/Triet_sol_3/Triet_sol_3.c)        | C          | Euclidean Iterative   |
-
+| NhatMinh           | [GCD_using_LCM.c](./Solutions/NhatMinh_LCM/GCD_using_LCM.c)        | C          | LCM inversed formula   |
 Slide URL: [GCD](https://www.canva.com/design/DAGR8jy0tUk/l16knP82W1_KS0H2Khpp9g/view?utm_content=DAGR8jy0tUk&utm_campaign=designshare&utm_medium=link&utm_source=editor)
