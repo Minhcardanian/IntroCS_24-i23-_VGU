@@ -1,29 +1,18 @@
-START
+Procedure FindLCM(a, b)
+    Set larger = max(a, b)
+    Set lcm = larger
+    While (lcm mod a ≠ 0 OR lcm mod b ≠ 0) Do
+        Set lcm = lcm + larger
+    End While
+    Return lcm
+End Procedure
 
-FUNCTION find_lcm(a, b) // find_lcm find lcm by adding the larger number to itself until it's divisible by both a and b
-    SET larger = MAX(a, b)
-    SET lcm = larger
+Procedure FindGCD(a, b)
+    Set lcm = FindLCM(a, b)
+    Return (a * b) / lcm
+End Procedure
 
-    WHILE lcm is NOT divisible by a OR lcm is NOT divisible by b DO
-        lcm = lcm + larger 
-    END WHILE
-
-    RETURN lcm
-END FUNCTION
-
-FUNCTION find_gcd(a, b) // find_gcd find gcd based on the formular gcd(a, b) = a * b / lcm(a, b)
-    SET lcm = find_lcm(a, b) 
-    RETURN (a * b) / lcm       
-END FUNCTION
-
-FUNCTION main
-    DECLARE a, b 
-
-    PRINT "Enter two numbers: "
-    READ a, b     
-
-    SET gcd = find_gcd(a, b)  
-    PRINT "GCD of a and b is: ", gcd  
-END FUNCTION
-
-END
+Procedure Main
+    Input a, b
+    Output "GCD of", a, "and", b, "is", FindGCD(a, b)
+End Procedure
