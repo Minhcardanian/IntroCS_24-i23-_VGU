@@ -1,0 +1,13 @@
+Procedure LCM(a, b)
+    larger = max(a, b)
+    lcm = larger
+    while lcm % a ≠ 0 or lcm % b ≠ 0:
+        lcm = lcm + larger
+    return lcm
+End Procedure
+
+Procedure GCD(a, b)
+    lcm = LCM(a, b)
+    return (a * b) // lcm
+End Procedure
+
