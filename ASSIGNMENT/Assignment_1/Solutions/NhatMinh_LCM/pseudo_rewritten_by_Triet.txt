@@ -8,6 +8,6 @@ End Procedure
 
 Procedure GCD(a, b)
     lcm = LCM(a, b)
-    return (a * b) // lcm
+    return (a * b) / lcm
 End Procedure
 
